@@ -6,7 +6,8 @@ on:
       - main
 
 jobs:
-  - name: Create Release
+  create_release:
+    name: Create Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
