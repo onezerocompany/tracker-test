@@ -1,0 +1,26 @@
+release:
+  tag_template: "{major}.{minor}.{patch}"
+  commit_url: https://github.com/onezerocompany/tracker-test/commit/{{commit}}
+  release_url: https://github.com/onezerocompany/tracker-test/releases/tag/{{release}}
+  changelog_fallback: This update contains minor improvements and fixes.
+main_branch: main
+users:
+  - username: lucasilverentand
+    assign_issue: true
+    environments:
+      - type: firebase-hosting
+        release: true
+        edit_changelog: true
+environments:
+  - type: firebase-hosting
+    github_name: firebase
+    version_template: "{major}.{minor}.{patch}"
+    changelog:
+      generate: false
+      type: github
+  - type: apple-testflight-internal
+    github_name: TestFlight Internal
+    version_template: "{major}.{minor}.{patch}-alpha"
+    changelog:
+      generate: true
+      type: internal-testing

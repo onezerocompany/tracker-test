@@ -1,0 +1,14 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["project-manifest.json"],
+      "url": "https://raw.githubusercontent.com/onezerocompany/coding/feat/release-tracker/schemas/project-manifest.json"
+    }
+  ],
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/onezerocompany/coding/feat/release-tracker/schemas/project-manifest.json": [
+      "project-manifest.yaml",
+      "project-manifest.yml"
+    ]
+  }
+}
