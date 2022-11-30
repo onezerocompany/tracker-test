@@ -1,0 +1,13 @@
+name: Update Release Tracker
+
+on:
+  issue_comment:
+    types: [edited]
+
+jobs:
+  update_release_tracker:
+    name: Update Release Tracker
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update Release Tracker
+        uses: onezerocompany/coding/actions/release-tracker@feat/release-tracker

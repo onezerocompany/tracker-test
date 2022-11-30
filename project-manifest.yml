@@ -17,10 +17,9 @@ environments:
     version_template: "{major}.{minor}.{patch}"
     changelog:
       generate: false
-      type: github
+
   - type: apple-testflight-internal
     github_name: TestFlight Internal
     version_template: "{major}.{minor}.{patch}-alpha"
     changelog:
       generate: true
-      type: internal-testing
