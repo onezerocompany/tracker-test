@@ -1,9 +1,13 @@
-name: Create Release & Tracker Issue
+name: Release & Tracker Issue
 
 on:
   push:
     branches:
       - main
+  issue_comment:
+    types: [edited]
+  issues:
+    types: [edited]
 
 jobs:
   create_release:
