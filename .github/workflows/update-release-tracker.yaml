@@ -3,6 +3,8 @@ name: Update Release Tracker
 on:
   issue_comment:
     types: [edited]
+  issues:
+    types: [edited]
 
 jobs:
   update_release_tracker:
