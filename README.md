@@ -4,4 +4,4 @@ And this is a feature as well.
 How about a fourth feature.
 And a fifth feature, just for good measure.
 sixth feature
-seventh feature
+seventh feature.
