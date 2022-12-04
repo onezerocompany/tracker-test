@@ -37,5 +37,7 @@ environments:
   - type: apple-app-store
     github_name: App Store
     version_template: "{major}.{minor}.{patch}"
+    needs:
+      - firebase-hosting
     changelog:
       generate: true
