@@ -9,17 +9,33 @@ users:
     assign_issue: true
     environments:
       - type: firebase-hosting
-        release: true
+        deploy: true
         edit_changelog: true
+
+      - type: apple-testflight-internal
+        deploy: true
+        edit_changelog: false
+
+      - type: apple-app-store
+        deploy: false
+        edit_changelog: false
+
 environments:
   - type: firebase-hosting
     github_name: firebase
     version_template: "{major}.{minor}.{patch}"
+    auto_release: true
     changelog:
       generate: false
 
   - type: apple-testflight-internal
     github_name: TestFlight Internal
     version_template: "{major}.{minor}.{patch}-alpha"
+    changelog:
+      generate: true
+
+  - type: apple-app-store
+    github_name: App Store
+    version_template: "{major}.{minor}.{patch}"
     changelog:
       generate: true
