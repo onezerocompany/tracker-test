@@ -9,15 +9,22 @@ on:
   issues:
     types: [edited]
 
+concurrency:
+  # group by sha of pushed commit or issue number
+  group: release-tracker-${{ github.event.issue.number || github.sha }}
+  cancel-in-progress: true
+
 jobs:
   create_release:
     name: Create Release
     runs-on: ubuntu-latest
     steps:
+      # make sure the git information is available for the release-tracker action
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: Create Release
+      # run the release-tracker action, it auto detects what to do
+      - name: Release Tracker
         uses: onezerocompany/coding/actions/release-tracker@feat/release-tracker
