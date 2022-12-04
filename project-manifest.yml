@@ -14,7 +14,7 @@ users:
 
       - id: testflight-internal
         deploy: true
-        edit_changelog: false
+        edit_changelog: true
 
       - id: app-store
         deploy: false
