@@ -17,15 +17,15 @@ users:
         edit_changelog: true
 
       - id: app-store
-        deploy: false
-        edit_changelog: false
+        deploy: true
+        edit_changelog: true
 
 environments:
   - id: firebase
     type: firebase-hosting
     github_name: firebase
     version_template: "{major}.{minor}.{patch}"
-    auto_release: true
+    auto_deploy: true
     changelog:
       generate: false
 
