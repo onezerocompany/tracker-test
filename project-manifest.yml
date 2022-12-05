@@ -23,7 +23,7 @@ users:
 environments:
   - id: firebase
     type: firebase-hosting
-    github_name: firebase
+    github_name: Firebase Functions
     version_template: "{major}.{minor}.{patch}"
     auto_deploy: true
     changelog:
