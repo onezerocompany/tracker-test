@@ -6,7 +6,7 @@
     }
   ],
   "yaml.schemas": {
-    "https://raw.githubusercontent.com/onezerocompany/coding/feat/release-tracker/schemas/project-manifest.json": [
+    "https://raw.githubusercontent.com/onezerocompany/coding/main/schemas/project-manifest.json": [
       "project-manifest.yaml",
       "project-manifest.yml"
     ]
